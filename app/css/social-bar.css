@@ -1,0 +1,158 @@
+
+.faceb { display: block;
+    width: 42px;
+    height: 44px;
+    background: url('../img/icons-spritesheet.png') -50px 0;
+}
+
+.faceb:hover {
+    background: url('../img/icons-spritesheet.png') -92px 0;
+}
+
+.github { display: block;
+    width: 42px;
+    height: 44px;
+    background: url('../img/icons-spritesheet.png') 0 -44px;
+}
+
+.github:hover {
+    background: url('../img/icons-spritesheet.png') -42px -44px;
+}
+
+.tw { display: block;
+    width: 42px;
+    height: 44px;
+    background: url('../img/icons-spritesheet.png') -37px -88px;
+}
+
+.tw:hover {
+    background: url('../img/icons-spritesheet.png') -79px -88px;
+}
+.vk { display: block;
+    width: 42px;
+    height: 44px;
+    background: url('../img/icons-spritesheet.png') -121px -88px;
+}
+
+.vk:hover {
+    background: url('../img/icons-spritesheet.png') -158px 0;
+}
+
+
+
+
+
+/**** конец соц-бара  ******/
+
+/** contants **/
+.email:before { display: inline-block;
+    float: left;
+    margin: 12.5px 0;
+    content: '';
+    width: 17px;
+    height: 13px;
+    background: url('../img/icons-spritesheet.png') -10px 0;
+}
+.skype:before { display: inline-block;
+    float: left;
+    margin: 9px 0;
+    content: '';
+    width: 17px;
+    height: 20px;
+    background: url('../img/icons-spritesheet.png') 0 -88px;
+}
+
+.phone:before { display: inline-block;
+    float: left;
+    margin: 8px 0;
+    content: '';
+    width: 17px;
+    height: 22px;
+    background: url('../img/icons-spritesheet.png') -20px -88px;
+}
+/** end contacnts **/
+
+.arrow { display: block;
+    content: '';
+    width: 10px;
+    height: 38px;
+    background: url('../img/icons-spritesheet.png') 0 0;
+}
+
+.email-grey { display: block;
+    width: 23px;
+    height: 17px;
+    background: url('../img/icons-spritesheet.png') -27px 0;
+}
+
+.grey-arrow { display: block;
+    width: 11px;
+    height: 40px;
+    background: url('../img/icons-spritesheet.png') -84px -44px;
+}
+
+.key { display: block;
+    width: 22px;
+    height: 20px;
+    background: url('../img/icons-spritesheet.png') -95px -44px;
+}
+
+.login_ { display: block;
+    width: 19px;
+    height: 22px;
+    background: url('../img/icons-spritesheet.png') -117px -44px;
+}
+
+.polaroid { display: block;
+    width: 21px;
+    height: 21px;
+    background: url('../img/icons-spritesheet.png') -95px -66px;
+}
+
+.school { display: block;
+    width: 22px;
+    height: 22px;
+    background: url('../img/icons-spritesheet.png') -116px -66px;
+}
+
+/*** JOX EXP ICONS ****/
+
+
+
+.unfinished-education {
+    margin-right: 40px;
+       display: inline-block;
+    width: 53px;
+    height: 53px;
+    background: url('../img/job-exp-sprite.png');
+       background-position: 0 0;
+}
+
+.courses {
+    margin-right: 40px;
+
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    background: url('../img/job-exp-sprite.png');
+    background-position: -53px 0;
+}
+
+.job-case {
+    margin-right: 40px;
+    display: inline-block;
+    width: 53px;
+    height: 54px;
+    background: url('../img/job-exp-sprite.png');
+    background-position: 0 54px;
+}
+
+.complited-educ {
+    margin-right: 40px;
+
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    background: url('../img/job-exp-sprite.png');
+        background-position: -53px -53px;
+}
