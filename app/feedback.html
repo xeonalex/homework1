@@ -12,6 +12,7 @@
 	<!-- endbower -->
 	<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/feedback.css">
 	<link rel="stylesheet" type="text/css" href="css/social-bar.css">
 	<title>Document</title>
 </head>
@@ -51,7 +52,27 @@
 				<h1 class="content-header">Мои работы</h1>
 
 				<div class="content clearfix">
-					Далее будет
+					<form class="feedback-form clearfix">
+						<div class="feedback-name-block">
+							<p>Имя</p>
+							<input type="text" class="feedback-name" placeholder='Как к Вам обращаться'>
+						</div>
+						<div class="feedback-email-block clearfix">
+							<p>Email</p>
+							<input type="text" class="feedback-email" placeholder='Куда мне писать'>
+						</div>
+						<div class="feedback-text-block">
+							<p>Сообщение</p>
+							<textarea class="feedback-text" placeholder='Кратко в чем суть'></textarea>
+
+						</div>
+						<div class="feedback-capcha-block">
+							<p>Введите код, указанный на картинке</p>
+							<img src="img/captcha.png" class="captcha-img">
+							<input type="text" class='feedback-capcha' name="capcha" placeholder='Введите код'>
+						</div>
+
+					</form>
 				</div>
 			</section>
 

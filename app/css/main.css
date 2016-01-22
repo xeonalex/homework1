@@ -159,6 +159,7 @@ float: right;
 	overflow: hidden;
 		list-style: none;
 	padding: 0px;
+	margin: 0;
 }
 .contacts-block__list-header {
   background-image: -moz-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
@@ -177,6 +178,7 @@ float: right;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
 	box-sizing: padding-box; *behavior: url(/js/boxsizing.htc);
 	padding-left: 26px;
+	margin: 0;
 }
 
 .contacts-block__list-li {
@@ -242,11 +244,13 @@ display: block;
 	box-sizing: border-box; *behavior: url(/js/boxsizing.htc);
 }
 .content-header {
+
+  	line-height: 1.2;
 	margin: 0px;
 	font-size: 1.5em;
 	color: #eeedec;
 	text-shadow: 1px 1px 2px #757373;
-	padding: 5px 0 5px 44px;
+	padding: 10px 0 10px 44px;
 	text-align: left;
 	border-radius: 4px 4px 0 0;
 	border: 1px solid #9c9c9c;
@@ -372,14 +376,14 @@ margin: 0;
 }
 .job-exp__li {
 	display: block;
-	margin: 20px 0 ;
+	margin: 20px 0 0 0;
 
 }
-.job-exp__li:after {
+.job-exp__li:before {
 	content: '';
 	position: relative;
 	display: block;
-	margin-top:15px;
+	margin: 10px 0 20px;
 	width: 100%;
 	height: 1px;
 	background-color: #dbdad9;
@@ -390,11 +394,11 @@ margin: 0;
 
 
 
-.job-exp li:last-child:after {
+.job-exp__li:first-child:before {
 	display: none;
 	margin-top:0;
 }
-.job-exp li:last-child {
+.job-exp__li:first-child {
 	margin-bottom:0;
 }
 .job-exp li:first-child {

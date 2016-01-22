@@ -1,0 +1,63 @@
+.feedback-form {
+	margin: 0 auto;
+	width: 405px;
+}
+
+.feedback-form input,textarea {
+  border: 1px solid #d6d5d3;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box; *behavior: url(/js/boxsizing.htc);
+  background-image: -moz-linear-gradient( 90deg, rgb(243,243,243) 0%, rgba(251,249,249,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(243,243,243) 0%, rgba(251,249,249,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(243,243,243) 0%, rgba(251,249,249,0) 100%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfcfd',
+            endColorstr='#f4f3f3',GradientType=0);
+}
+
+.feedback-form p{
+margin: 0 0 10px 0;
+}
+
+.feedback-name-block {
+	display: block;
+	float: left;
+	margin-bottom: 15px;
+
+}
+.feedback-name {
+	width: 190px;
+}
+
+.feedback-email-block {
+	display: block;
+	float: right;
+	margin-bottom: 15px;
+}
+.feedback-email {
+	width: 190px;
+}
+
+.feedback-text-block{
+	display: block;
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	overflow: hidden;
+}
+.feedback-text {
+	width: 405px;
+	height: 180px;
+}
+.fedback-capcha-block{
+	display: block;
+	float: left;
+}
+.captcha-img {
+	display: inline-block;
+	width: 190px;
+}
+.feedback-capcha {
+	display: inline-block;
+}
