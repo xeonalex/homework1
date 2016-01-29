@@ -5,13 +5,21 @@
 
 .feedback-form input,textarea {
     border-radius: 4px;
-  padding: 10px;
+font-size: 12px;
+font-family: 'open_sanslight';
   box-sizing: border-box; *behavior: url(/js/boxsizing.htc);
+}
+input[type='submit'], input[type='reset'] {
+  font-family: 'open_sanssemibold';
+  font-size:14px;
 }
 
 .feedback-form p{
 margin: 0 0 10px 0;
+font-size: 14px;
+ font-family: 'open_sansregular';
 }
+
 
 .feedback-name-block {
 	display: block;
@@ -20,8 +28,10 @@ margin: 0 0 10px 0;
 
 }
 .feedback-name {
-	width: 190px;
+	width: 192px;
+  height: 39px;
 	border: 1px solid #d6d5d3;
+    padding: 10px;
 	 background-image: -moz-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
   background-image: -webkit-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
   background-image: -ms-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
@@ -38,7 +48,9 @@ margin: 0 0 10px 0;
 }
 .feedback-email {
 	border: 1px solid #d6d5d3;
-	width: 190px;
+	width: 192px;
+  height: 39px;
+    padding: 10px;
 	 background-image: -moz-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
   background-image: -webkit-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
   background-image: -ms-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
@@ -58,6 +70,7 @@ margin: 0 0 10px 0;
 	border: 1px solid #d6d5d3;
 	width: 405px;
 	height: 180px;
+    padding: 10px;
 	 background-image: -moz-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
   background-image: -webkit-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
   background-image: -ms-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
@@ -78,7 +91,9 @@ margin: 0 0 10px 0;
 	display: block;
 float: right;
 margin-top: 15px;
-	width: 190px;
+	width: 192px;
+  height: 39px;
+  padding: 6px;
 	 background-image: -moz-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
   background-image: -webkit-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));
   background-image: -ms-linear-gradient( 90deg, rgba(243,243,243,0), rgba(251,249,249,1));

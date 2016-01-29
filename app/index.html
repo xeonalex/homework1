@@ -2,37 +2,44 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- HTML shim and Respond.js IE* support of HTML 5 elements and media queries -->
 	 <!--[if lt IE 9]>
    <script src="js/html5shiv.js"></script>
   <script src="js/respond.js"></script>
   <![endif]-->
 		<!-- bower:css -->
-	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
-	<!-- endbower -->
+		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+		<!-- endbower -->
 	<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main-pl.css">
 	<link rel="stylesheet" type="text/css" href="css/social-bar.css">
 	<title>Document</title>
-</head>
+	</head>
 <body>
+
 <div class="wrap-main">
 	<header class="header">
 		<div class="header-wrap">
 			<a href="index.html" class="logo"><img src="img/logo.png" class="logo" alt='logo'><span class='seo-span'>Loftschol от мыслителя к создателю</span></a>
+
+			<span class="adaptive-menu-init seo-span">Меню</span>
 			<ul class="social-bar">
 				<li class="social-bar__li"><a href="facebook.com" class="faceb"><span class="seo-span">facebook група</span></a></li>
 				<li class="social-bar__li"><a href="vk.com" class="vk"><span class="seo-span">vk група</span></a></li>
 				<li class="social-bar__li"><a href="twitter.com" class="tw"><span class="seo-span">twitter блог</span></a></li>
-				<li class="social-bar__li"><a href="github.com" class="github"><span class="seo-span">github акк</span></a></li>
+				<li class="social-bar__li"><a href="https://github.com/xeonalex/homework1" class="github"><span class="seo-span">github акк</span></a></li>
 			</ul>
+
+
 		</div>
 
 	</header>
 	<main class="page-main">
 		<aside class="aside">
 			<menu class="main-menu">
-				<li class='main-menu__li'><a href="index.html" id="a1" class="main-menu__li_link">Обо мне Me</a></li>
+				<li class='main-menu__li '><a href="index.html" id="a1" class=" menu_link-active">Обо мне</a></li>
 				<li class='main-menu__li'><a href="templates.html" id='a2' class="main-menu__li_link">Мои работы</a></li>
 				<li class='main-menu__li'><a href="feedback.html" id="a3" class="main-menu__li_link">Обратная связь</a></li>
 			</menu>
@@ -42,8 +49,8 @@
 				<ul class="contacts-block__list">
 					<li class="contacts-block__list-li email"><a href="mailto:lux1995@yandex.ru" class="mail">lux1995@yandex.ru</a></li>
 					<li class="contacts-block__list-li phone">
-	                                +380921021523</li>
-					<li class="contacts-block__list-li skype">xeonalex</li>
+	                              <a href="tel:lux1995@yandex.ru" class="mail">+380971222337</a></li>
+					<li class="contacts-block__list-li skype"><a href="skype:lux1995@yandex.ru" class="mail">xeonalex</a></li>
 				</ul>
 			</div>
 		</aside>
@@ -61,7 +68,7 @@
 						<li> <strong>Мой возраст:</strong> 20 лет</li>
 						<li> <strong>Мой город:</strong> Винница </li>
 						<li> <strong>Моя специализация:</strong> Front-end разработчик </li>
-						<li> <strong>Ключевые навыки:</strong>
+						<li class="profile-li-tags"> <strong>Ключевые навыки:</strong>
 						<div class="tag-list clearfix">
 							<p class="tags"><span>CSS</span></p>
 							<p class="tags"><span>JS</span></p>
@@ -80,23 +87,20 @@
 				<div class="content clearfix">
 					<ul class="job-exp">
 						<li class="job-exp__li">
-							<div class="job-case"></div>
-							<div class="job-exp__li-text">
+							<div class="job-exp__li-text job-case">
 								<p>"ИП Боровицкий" - Продавец дисков</p>
 								<p>Сентябрь 2005 - Август 2008</p>
 							</div>
 						</li>
 						<li class="job-exp__li">
-						<div class="job-case"></div>
-						<div class="job-exp__li-text">
+						<div class="job-exp__li-text job-case">
 							<p>"ООО Системы безопастности" - Системный администратор</p>
 							<p>Июнь 2008 - Июль 2010</p>
 						</div>
 						</li>
 
 						<li class="job-exp__li">
-						<div class="job-case"></div>
-						<div class="job-exp__li-text">
+						<div class="job-exp__li-text job-case">
 							<p>"Магнит, Розничная сеть" - Ведущий аналитик по внедрению Oracle Web Center</p>
 							<p>Август 2011 - Октябрь 2012</p>
 						</div>
@@ -111,23 +115,21 @@
 				<div class="content clearfix">
 					<ul class="job-exp">
 						<li class="job-exp__li">
-							<div class="complited-educ"></div>
-							<div class="job-exp__li-text">
+							<div class="job-exp__li-text complited-educ">
 								<p>Полное среднее. Песчанский УВК школа-гимназия №1 </p>
 								<p>Сентябрь 2001 - Август 2012</p>
 							</div>
 						</li>
 						<li class="job-exp__li">
-						<div class="unfinished-education"></div>
-						<div class="job-exp__li-text">
+
+						<div class="job-exp__li-text unfinished-education">
 							<p>Незаконченное высшее. ВНАУ "Економическая кибернетика"</p>
 							<p>Сентябрь 2012 - по настоящее время</p>
 						</div>
 						</li>
 
 						<li class="job-exp__li">
-						<div class="courses"></div>
-						<div class="job-exp__li-text">
+						<div class="job-exp__li-text courses">
 							<p>Курсы Loftschool.ru</p>
 							<p>Январь 2016 - по настоящее время</p>
 						</div>
@@ -154,6 +156,7 @@
 
 	<!-- bower:js -->
 	<script src='bower_components/jquery/dist/jquery.js'></script>
+
 	<!-- endbower -->
 	<script src='js/main.js'></script>
 	<script src='js/plugins.js'></script>
