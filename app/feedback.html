@@ -2,6 +2,7 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- HTML shim and Respond.js IE* support of HTML 5 elements and media queries -->
 	 <!--[if lt IE 9]>
    <script src="js/html5shiv.js"></script>
@@ -12,7 +13,9 @@
 	<!-- endbower -->
 	<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main-pl.css">
 	<link rel="stylesheet" type="text/css" href="css/feedback.css">
+	<link rel="stylesheet" type="text/css" href="css/feedback-pl.css">
 	<link rel="stylesheet" type="text/css" href="css/social-bar.css">
 	<title>Document</title>
 	<script src='bower_components/modernizr/modernizr.js'></script>
@@ -22,6 +25,7 @@
 	<header class="header">
 		<div class="header-wrap">
 			<a href="index.html" class="logo"><img src="img/logo.png" class="logo" alt="logo"><span class='seo-span'>Loftschol от мыслителя к создателю</span></a>
+			<span class="adaptive-menu-init seo-span">Меню</span>
 			<ul class="social-bar">
 				<li class="social-bar__li"><a href="facebook.com" class="faceb"><span class="seo-span">facebook група</span></a></li>
 				<li class="social-bar__li"><a href="vk.com" class="vk"><span class="seo-span">vk група</span></a></li>
@@ -34,7 +38,7 @@
 	<main class="page-main">
 		<aside class="aside">
 			<menu class="main-menu">
-				<li class='main-menu__li'><a href="index.html" id="a1" class="main-menu__li_link">Обо мне Me</a></li>
+				<li class='main-menu__li'><a href="index.html" id="a1" class="main-menu__li_link">Обо мне</a></li>
 				<li class='main-menu__li'><a href="templates.html" id='a2' class="main-menu__li_link">Мои работы</a></li>
 				<li class='main-menu__li'><a href="feedback.html" id="a3" class="menu_link-active">Обратная связь</a></li>
 			</menu>
@@ -55,28 +59,31 @@
 				<h1 class="content-header">У вас интересный проект? Напишите мне</h1>
 
 				<div class="content clearfix">
-					<form class="feedback-form clearfix">
+					<form class="feedback-form clearfix req_form" method="post">
+<form class="feedback-form clearfix req_form" >
 						<div class="feedback-name-block">
 							<p>Имя</p>
-							<input type="text" class="feedback-name" placeholder='Как к Вам обращаться'>
+							<input type="text" class="feedback-name rfield" placeholder='Как к Вам обращаться' tooltip-data='Ошыбочка заполните имя' tooltip-side='left'>
 						</div>
 						<div class="feedback-email-block clearfix">
 							<p>Email</p>
-							<input type="text" class="feedback-email" placeholder='Куда мне писать'>
+							<input type="text" class="feedback-email rfield" placeholder='Куда мне писать' tooltip-data='Ошыбочка заполните имя' tooltip-side='right'>
 						</div>
-						<div class="feedback-text-block">
+						<div class="feedback-text-block clearfix ">
 							<p>Сообщение</p>
-							<textarea class="feedback-text" placeholder='Кратко в чем суть'></textarea>
+							<textarea class="feedback-text rfield" placeholder='Кратко в чем суть' tooltip-data='Ошыбочка заполните имя' tooltip-side='left'></textarea>
 
 						</div>
-						<div class="feedback-capcha-block">
+
+						<div class="feedback-capcha-block clearfix">
 							<p>Введите код, указанный на картинке</p>
-							<img src="img/captcha.png" class="captcha-img" alt="capcha">
-							<input type="text" class="feedback-capcha" placeholder='Введите код'>
+							<img type='text' src="" alt="capcha" class="capcha-img">
+							<input type="text" class="feedback-capcha rfield" placeholder='Введите код' tooltip-data='Ошыбочка заполните имя' tooltip-side='right'>
 						</div>
+
 						<div class="submit-block">
-							<input type="submit" class="submit-button" value="Отправить">
-							<input type="reset" class="reset-button" value="Очистить">
+							<input type="submit" class="submit-button btn_submit disabled" value="Отправить" id="submit">
+							<input type="reset" class="reset-button btn-reset" value="Очистить">
 
 						</div>
 					</form>
@@ -105,6 +112,7 @@
 	<script src='bower_components/jquery-placeholder/jquery.placeholder.js'></script>
 	<!-- endbower -->
 	<script src='js/main.js'></script>
+	<script src='js/popup.js'></script>
 	<script src='js/plugins.js'></script>
 </body>
 </html>

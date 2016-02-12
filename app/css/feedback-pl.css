@@ -1,0 +1,98 @@
+@media all and (max-width:600px) {
+
+  .content {
+    padding: 30px 12.5%;
+    text-align: justify;
+  }
+    .feedback-form {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .feedback-form p{
+    margin: 0 0 10px 0;
+    font-size: 14px;
+     font-family: 'open_sansregular';
+    }
+
+
+    .feedback-name-block {
+      width: 100%;
+      display: block;
+      float: left;
+      margin-bottom: 15px;
+
+    }
+    .feedback-name {
+      width: 99.5%;
+      height: 39px;
+      border: 1px solid #d6d5d3;
+        padding: 10px;
+    }
+
+    .feedback-email-block {
+      width: 100%;
+      display: block;
+      float: right;
+      margin-bottom: 15px;
+
+    }
+    .feedback-email {
+      border: 1px solid #d6d5d3;
+      width: 99.5%;
+      height: 39px;
+        padding: 10px;
+
+    }
+
+    .feedback-text-block{
+            display: block;
+      float: left;
+      margin-bottom: 15px;
+      width: 100%;
+
+    }
+    .feedback-text {
+      border: 1px solid #d6d5d3;
+      width: 99.5%;
+      height: 180px;
+        padding: 10px;
+
+    }
+    .fedback-capcha-block{
+      width: 100%;
+      display: block;
+      float: left;
+    }
+    .captcha-img {
+      display: inline-block;
+      width: 190px;
+    }
+    .feedback-capcha {
+      border: 1px solid #d6d5d3;
+      display: block;
+    float: right;
+    margin-top: 15px;
+      width: 123px;
+      height: 39px;
+      padding: 6px;
+
+    }
+
+    .submit-block {
+      display: block;
+      margin: 20px auto 0;
+      width: 340px;
+    }
+    .submit-button{
+      float: left;
+      width: 120px;
+      height: 37px;
+    }
+    .reset-button{
+        float: right;
+      width: 120px;
+      height: 37px;
+    }
+
+}

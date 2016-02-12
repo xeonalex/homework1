@@ -2,6 +2,7 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- HTML shim and Respond.js IE* support of HTML 5 elements and media queries -->
 	 <!--[if lt IE 9]>
    <script src="js/html5shiv.js"></script>
@@ -12,15 +13,20 @@
 	<!-- endbower -->
 	<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main-pl.css">
 	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<link rel="stylesheet" type="text/css" href="css/template-pl.css">
 	<link rel="stylesheet" type="text/css" href="css/social-bar.css">
 	<title>Мои работы</title>
+	<script src='bower_components/modernizr/modernizr.js'></script>
 </head>
 <body>
 <div class="wrap-main">
 	<header class="header">
 		<div class="header-wrap">
 			<a href="index.html" class="logo"><img src="img/logo.png" class="logo" alt='logo'><span class='seo-span'>Loftschol от мыслителя к создателю</span></a>
+
+			<span class="adaptive-menu-init seo-span">Меню</span>
 			<ul class="social-bar">
 				<li class="social-bar__li"><a href="facebook.com" class="faceb"><span class="seo-span">facebook група</span></a></li>
 				<li class="social-bar__li"><a href="vk.com" class="vk"><span class="seo-span">vk група</span></a></li>
@@ -33,7 +39,7 @@
 	<main class="page-main">
 		<aside class="aside">
 			<menu class="main-menu">
-				<li class='main-menu__li'><a href="index.html" id="a1" class="main-menu__li_link">Обо мне Me</a></li>
+				<li class='main-menu__li'><a href="index.html" id="a1" class="main-menu__li_link">Обо мне</a></li>
 				<li class='main-menu__li'><a href="templates.html" id='a2' class="menu_link-active">Мои работы</a></li>
 				<li class='main-menu__li'><a href="feedback.html" id="a3" class="main-menu__li_link">Обратная связь</a></li>
 			</menu>
@@ -51,7 +57,7 @@
 		<div class="content-wrap clearfix">
 			<section class='content-block '>
 				<h1 class="content-header">Мои работы</h1>
-				<div class="content clearfix">
+				<div class="content clearfix content-just">
 					<article class="template-block">
 						<div class="template-img-block">
 							<a href="#"><img src="img/pic01.jpg" alt="a-industry.ru" class="template-img">
@@ -76,7 +82,7 @@
 							</p>
 						</div>
 					</article>
-					<article class="template-block none-marg clearfix">
+					<article class="template-block ">
 						<div class="template-img-block">
 							<a href="#"><img src="img/pic03.jpg" alt="a-industry.ru" class="template-img"><span>Перейти</span></a>
 						</div>
@@ -111,19 +117,40 @@
 							</p>
 						</div>
 					</article>
-					<a href="#" alt='Добавить шаблон'>
+					<a href="#templadd" alt='Добавить шаблон' id='add-templ'>
 					<div class="template-add-link-block">
-					<img src="img/add-template.png" class="template-add-img">
+					<img src="img/add-template.png" class="template-add-img"  >
 						<p class="template-add-text">Добавить проект</p>
 					</div>
 					</a>
+					<div class="template-block-empty"></div>
+
+
 				</div>
 			</section>
 
 		</div>
 
 	</main>
+	<div class='popup-wrap'></div>
+					<div class="popup-content" id='templadd'>
+						<p class="popup-header">Добавление проекта</p>
+						<form class="add-templ-form req_form">
+						<label class="popup-close"></label>
+							<label for="proj-name">Название проекта</label>
+							<input type="text" class="rfield" name='proj-name' placeholder='Введите название' tooltip-data='Ошыбочка заполните имя' tooltip-side='left'>			<label for="proj-img">Картинка проекта</label>
 
+							<label class="file-stand-in">
+							<input type="text" class="file-stand-in-text rfield rfield-file" placeholder='Загрузить изображение' readonly="" tooltip-data='Ошыбочка заполните имя' tooltip-side='left'>
+							</label>
+							<input class='file-upload' type="file" name='proj-img' >
+							<label for="proj-url">URL проекта</label>
+							<input type="text" class='rfield' name='proj-url' placeholder='Добавьте ссылку' tooltip-data='Ошыбочка заполните имя' tooltip-side='left'>
+							<label for="proj-desrc">Название проекта</label>
+							<textarea class='rfield' name='proj-desrc' placeholder='Пара слов о Вашем проекте' tooltip-data='Ошыбочка заполните имя' tooltip-side='left'></textarea>
+							<input type="submit" value='Добавить' class="submit-button btn_submit" >
+						</form>
+					</div>
 </div>
 
 <footer class="footer">
@@ -138,8 +165,10 @@
 
 	<!-- bower:js -->
 	<script src='bower_components/jquery/dist/jquery.js'></script>
+	<script src='bower_components/jquery-placeholder/jquery.placeholder.js'></script>
 	<!-- endbower -->
 	<script src='js/main.js'></script>
 	<script src='js/plugins.js'></script>
+	<script src='js/popup.js'></script>
 </body>
 </html>
