@@ -581,13 +581,11 @@ content: '';
 
 /**** ПОП - АП*****/
 .popup-wrap {
-	display: none;
 	position: fixed;
 	width: 100%;
 	height:100%;
 	top: 0;
 	left: 0;
-
 	background: rgb(114,112,112);
 	opacity: 0.72;
 	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=72);
@@ -673,11 +671,10 @@ content: '';
 outline: none;
 }
 
-.feedback-form input:focus,textarea:focus {
-  border: 2px solid rgba(180, 105, 72,0.85);
-  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35), 0px 2px 2px 0px rgba(113, 111, 111, 0.1);
-outline: none;
+.add-templ-form button:focus {
+  outline: none;
 }
+
 
 .add-templ-form textarea {
 	height: 110px;
@@ -701,6 +698,14 @@ border: 1px solid #51bc9e;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80e8cb',
             endColorstr='#43b796',GradientType=0);
 }
+.add-templ-form .submit-button:hover {
+  background-image: -moz-linear-gradient( 90deg, rgba(58,160,135,1), #5fdcbd);
+  background-image: -webkit-linear-gradient( 90deg, rgba(58,160,135,1), rgba(95,220,189,1));
+  background-image: -ms-linear-gradient( 90deg, rgba(58,160,135,1), rgba(95,220,189,1));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5fdcbd',
+            endColorstr='#3aa087',GradientType=0);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
 
 label.file-stand-in{
 	text-decoration: none;
@@ -710,18 +715,29 @@ label.file-stand-in{
 	margin: 0 0 11px ;
 	height: 41px;
 	line-height: 22px;
+	position: relative;
 	background: url('../img/add-file-img.png') #ffffff;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/add-file-img.png', sizingMethod='scale');
+        background: #ffffff \9;
 	background-position: right;
 	background-repeat: no-repeat;
 	cursor: pointer;
-
-
+}
+label.file-stand-in:after{
+content: '';
+display: inline-block;
+position: absolute;
+top: 0;
+right: 0;
+background: url('../img/add-file-img.png');
+width: 53px;
+height: 39px;
 }
 
 input.file-stand-in-text {
 	padding: 10px 54px 10px 10px;
 	height: 100%;
+	position: relative;
+	z-index: 2;
 	border-radius: 0;
 	background: none;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader();

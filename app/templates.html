@@ -3,15 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- HTML shim and Respond.js IE* support of HTML 5 elements and media queries -->
-	 <!--[if lt IE 9]>
-   <script src="js/html5shiv.js"></script>
-  <script src="js/respond.js"></script>
-  <![endif]-->
 		<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
 	<!-- endbower -->
-	<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/main-pl.css">
 	<link rel="stylesheet" type="text/css" href="css/template.css">
@@ -117,7 +112,7 @@
 							</p>
 						</div>
 					</article>
-					<a href="#templadd" alt='Добавить шаблон' id='add-templ'>
+					<a href="#templadd" alt='Добавить шаблон' id='add-templ' class="popup-init">
 					<div class="template-add-link-block">
 					<img src="img/add-template.png" class="template-add-img"  >
 						<p class="template-add-text">Добавить проект</p>
@@ -132,7 +127,7 @@
 		</div>
 
 	</main>
-	<div class='popup-wrap'></div>
+
 					<div class="popup-content" id='templadd'>
 						<p class="popup-header">Добавление проекта</p>
 						<form class="add-templ-form req_form">
@@ -148,7 +143,7 @@
 							<input type="text" class='rfield' name='proj-url' placeholder='Добавьте ссылку' tooltip-data='Ошыбочка заполните имя' tooltip-side='left'>
 							<label for="proj-desrc">Название проекта</label>
 							<textarea class='rfield' name='proj-desrc' placeholder='Пара слов о Вашем проекте' tooltip-data='Ошыбочка заполните имя' tooltip-side='left'></textarea>
-							<input type="submit" value='Добавить' class="submit-button btn_submit" >
+							<button type="submit" value='Добавить' class="submit-button btn_submit" >Добавить</button>
 						</form>
 					</div>
 </div>

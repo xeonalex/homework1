@@ -17,13 +17,19 @@ font-family: 'open_sanslight';
 outline: none;
 }
 
+
+
 .feedback-form textarea {
 resize: none;
 }
 
-input[type='submit'], input[type='reset'] {
+button[type='submit'], button[type='reset'] {
   font-family: 'open_sanssemibold';
   font-size:14px;
+}
+
+.feedback-form button {
+  outline: none;
 }
 
 
